@@ -1,0 +1,39 @@
+.header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #050505c6;
+        backdrop-filter: blur(10px);
+        height: 70px;
+        padding: 20px 50px;
+        gap: 40px;
+
+        @media (min-width: 768px) {
+            padding: 20px 10%;
+        }
+
+        span {
+            color: $brand-color;
+        }
+    }
+    
+    nav {
+        .list {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            font-size: 14px;
+        }
+
+        .link {
+            color: white;
+        }
+    }
+}
