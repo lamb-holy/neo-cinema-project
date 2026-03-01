@@ -12,11 +12,11 @@
         background-color: #050505c6;
         backdrop-filter: blur(10px);
         height: 70px;
-        padding: 20px 50px;
+        padding: 20px 150px;
         gap: 40px;
 
-        @media (min-width: 768px) {
-            padding: 20px 10%;
+        @media (max-width: 768px) {
+            padding: 20px 50px;
         }
 
         span {

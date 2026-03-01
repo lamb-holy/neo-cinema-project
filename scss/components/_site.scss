@@ -1,9 +1,9 @@
 .main {
     #hero {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 780px;
+        margin: 0 auto;
+        padding-top: 300px;
+        width: 100%;
+        min-height: 780px;
         background-image: radial-gradient(
             circle at center,
             #32323268 5%,
@@ -20,6 +20,14 @@
             opacity: 0;
             transform: translateY(30px);
             animation: slideUp 1s ease-out forwards;
+
+            @media (max-width: 768px) {
+                font-size: 40px;
+            }
+
+            @media (max-width: 414px) {
+                font-size: 30px;
+            }
         }
         
         @keyframes slideUp {
@@ -43,6 +51,167 @@
             border: 0;
             border-radius: 50px;
             box-shadow: 0 0 20px 1px #f193fb73;
+        }
+    }
+
+    #movies {
+        .container {
+            width: 100%;
+            min-height: 700px;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            margin-top: 120px;
+            margin-bottom: 50px;
+            font-size: 30px;
+        }
+
+        .image {
+            border-radius: 15px;
+            width: 350px;
+            height: 350px;
+
+            @media (max-width: 768px) {
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+
+            @media (max-width: 768px) {
+                flex-wrap: wrap;
+            }
+        }
+
+        .movies__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: #121212;
+            transition: transform 0.3s ease
+        }
+
+        .movies__wrapper:hover {
+            background-color: #1e1e1e;
+            transform: translateY(-10px);
+        }
+
+        .purchase {
+            padding: 10px;
+            background-color: #121212;
+            color: white;
+            border: 1px solid white;
+            border-radius: 10px;
+        }
+
+        .purchase:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+
+    #ticket-section {
+        .container {
+            width: 100%;
+            min-height: 430px;
+            padding: 50px;            
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+        }
+
+        .ticket {
+            position: relative;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            max-width: 650px;
+            max-height: 270px;
+            gap: 100px;
+            border: 1px solid #333333ad;
+            border-radius: 25px;
+            padding: 40px;
+            background-image: radial-gradient(
+                circle at center,
+                #30151ea7 1%,
+                #0d0d0d 40%
+            );
+            transition: transform 0.5s ease;
+            z-index: 1;
+        }
+
+        .ticket:hover {
+            transform: translateY(-3px) scale(1.015);
+            z-index: 10;
+        }
+
+        .left {
+            .info {
+                margin-bottom: 10px;
+            }
+        }
+
+        .ticket__title {
+            font-size: 30px;
+        }
+
+        .qr-side {
+            padding-left: 20px;
+            .qr {
+                margin: 20px 10px 10px 30px;
+            }
+            .info {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                line-height: 10px;
+            }
+        }
+        
+        td {
+            font-size: 16px;
+            padding: 20px 30px 0 0;
+        }
+
+        .spot, .spot2 {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: $background-color;
+            border-radius: 50%;
+            z-index: 30;
+        }
+
+        .spot {
+            top: -10px;
+            left: 417px;
+        }
+
+        .spot2 {
+            top: 130px;
+            left: 417px;
+        }
+
+        .dash {
+            position: absolute;
+            top: 2px;
+            left: 430px;
+            width: 1px;
+            height: 255px;
+            border: 1px dashed #333;
+            z-index: 20;
         }
     }
 }
