@@ -113,10 +113,22 @@ body {
   width: 350px;
   height: 350px;
 }
-@media (max-width: 768px) {
+@media (min-width: 414px) {
+  .main #movies .image {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 768px) {
   .main #movies .image {
     width: 250px;
     height: 250px;
+  }
+}
+@media (min-width: 1140px) {
+  .main #movies .image {
+    width: 350px;
+    height: 350px;
   }
 }
 .main #movies .box {
@@ -124,7 +136,7 @@ body {
   justify-content: center;
   gap: 30px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1140px) {
   .main #movies .box {
     flex-wrap: wrap;
   }
@@ -159,6 +171,11 @@ body {
   min-height: 430px;
   padding: 50px;
 }
+@media (min-width: 414px) {
+  .main #ticket-section .container {
+    height: 500px;
+  }
+}
 .main #ticket-section .title {
   display: flex;
   justify-content: center;
@@ -179,6 +196,18 @@ body {
   transition: transform 0.5s ease;
   z-index: 1;
 }
+@media (min-width: 414px) {
+  .main #ticket-section .ticket {
+    width: 250px;
+    height: 350px;
+  }
+}
+@media (min-width: 1140px) {
+  .main #ticket-section .ticket {
+    width: 650px;
+    height: 270px;
+  }
+}
 .main #ticket-section .ticket:hover {
   transform: translateY(-3px) scale(1.015);
   z-index: 10;
@@ -193,7 +222,14 @@ body {
   padding-left: 20px;
 }
 .main #ticket-section .qr-side .qr {
+  max-width: 80px;
+  max-height: 80px;
   margin: 20px 10px 10px 30px;
+}
+.main #ticket-section .qr-side .svg {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .main #ticket-section .qr-side .info {
   display: flex;
