@@ -21,12 +21,20 @@
             transform: translateY(30px);
             animation: slideUp 1s ease-out forwards;
 
-            @media (max-width: 768px) {
+            @media (max-width: 414px) {
+                font-size: 30px;
+            }
+
+            @media (min-width: 415px), (max-width: 767px) {
                 font-size: 40px;
             }
 
-            @media (max-width: 414px) {
-                font-size: 30px;
+            @media (min-width: 768px) {
+                font-size: 50px;
+            }
+
+            @media (min-width: 1140px) {
+                font-size: 65px;
             }
         }
         
@@ -40,6 +48,22 @@
         .subtitle {
             font-size: 18px;
             margin-bottom: 30px;
+
+            @media (max-width: 414px) {
+                font-size: 10px;
+            }
+
+            @media (min-width: 415px), (max-width: 767px) {
+                font-size: 12px;
+            }
+
+            @media (min-width: 768px) {
+                font-size: 14px;
+            }
+
+            @media (min-width: 1140px) {
+                font-size: 18px;
+            }
         }
 
         .button {
@@ -73,9 +97,14 @@
             width: 350px;
             height: 350px;
 
-            @media (min-width: 414px) {
-                width: 150px;
-                height: 150px;
+            @media (max-width: 414px) {
+                width: 200px;
+                height: 200px;
+            }
+
+            @media (min-width: 415px), (max-width: 767px) {
+                width: 230px;
+                height: 230px;
             }
 
             @media (min-width: 768px) {
@@ -133,16 +162,12 @@
         .container {
             width: 100%;
             min-height: 430px;
-            padding: 50px;
-            
-            @media (min-width: 414px) {
-                height: 500px;
-            }
         }
 
         .title {
             display: flex;
             justify-content: center;
+            margin-top: 50px;
         }
 
         .ticket {
@@ -165,18 +190,28 @@
             transition: transform 0.5s ease;
             z-index: 1;
 
-            // @media (min-width: 741px) {
-                
-            // }
+            @media (max-width: 414px) {
+                max-width: 300px;
+                max-height: 120px;
+                padding: 20px;
+            }
 
-            @media (min-width: 414px) {
-                width: 250px;
-                height: 350px;
+            @media (min-width: 415px), (max-width: 767px) {
+                width: 400px;
+                height: 140px;
+                padding: 15px;
+            }
+
+            @media (min-width: 768px) {
+                width: 600px;
+                height: 220px;
+                padding: 30px;
             }
 
             @media (min-width: 1140px) {
                 width: 650px;
                 height: 270px;
+                padding: 40px;
             }
         }
 
@@ -186,22 +221,106 @@
         }
 
         .left {
+            width: 400px;
+
+            @media (max-width: 414px) {
+                width: 300px;
+            }
+            @media (min-width: 415px), (max-width: 767px) {
+                width: 380px;
+            }
+            @media (min-width: 768px) {
+                width: 400px;
+            }
+            @media (min-width: 1140px) {
+                width: 400px;
+            }
+
             .info {
                 margin-bottom: 10px;
+
+                @media (max-width: 414px) {
+                    font-size: 2px;
+                    margin-bottom: 3px;
+                }
+
+                @media (min-width: 415px), (max-width: 767px) {
+                    font-size: 10px;
+                }
+
+                @media (min-width: 768px) {
+                    font-size: 14px;
+                }
+
+                @media (min-width: 1140px) {
+                    font-size: 16px;
+                }
             }
         }
 
         .ticket__title {
             font-size: 30px;
+
+            @media (max-width: 414px) {
+                font-size: 2px;
+            }
+
+            @media (min-width: 415px), (max-width: 767px) {
+                font-size: 15px;
+            }
+
+            @media (min-width: 768px) {
+                font-size: 20px;
+            }
+
+            @media (min-width: 1140px) {
+                font-size: 30px;
+            }
         }
 
         .qr-side {
             padding-left: 20px;
 
+            @media (max-width: 414px) {
+                padding-left: 0;
+            }
+
+            @media (min-width: 415px), (max-width: 767px) {
+                padding-left: 5px;
+            }
+
+            @media (min-width: 768px) {
+                padding-left: 10px;
+            }
+
+            @media (min-width: 1140px) {
+                padding-left: 20px;
+            }
+
             .qr {
                 max-width: 80px;
                 max-height: 80px;
                 margin: 20px 10px 10px 30px;
+
+                @media (max-width: 414px) {
+                    max-width: 40px;
+                    max-height: 40px;
+                }
+
+                @media (min-width: 415px), (max-width: 767px) {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                @media (min-width: 768px) {
+                    width: 70px;
+                    height: 70px;
+                }
+
+                @media (min-width: 1140px) {
+                    width: 80px;
+                    height: 80px;
+                }
             }
 
             .svg {
@@ -215,12 +334,49 @@
                 justify-content: center;
                 align-items: center;
                 line-height: 10px;
+
+                @media (max-width: 414px) {
+                    font-size: 2px;
+                    line-height: 1px;
+                }
+
+                @media (min-width: 415px), (max-width: 767px) {
+                    font-size: 10px;
+                }
+
+                @media (min-width: 768px) {
+                    font-size: 10px;
+                }
+
+                @media (min-width: 1140px) {
+                    font-size: 16px;
+                }
             }
         }
         
         td {
             font-size: 16px;
             padding: 20px 30px 0 0;
+
+            @media (max-width: 414px) {
+                font-size: 2px;
+                padding: 0;
+            }
+
+            @media (min-width: 415px), (max-width: 767px) {
+                font-size: 10px;
+                padding: 10px 15px 0 0;
+            }
+
+            @media (min-width: 768px) {
+                font-size: 14px;
+                padding: 10px 15px 0 0;
+            }
+
+            @media (min-width: 1140px) {
+                font-size: 16px;
+                padding: 20px 30px 0 0;
+            }
         }
 
         .spot, .spot2 {
@@ -230,16 +386,76 @@
             background-color: $background-color;
             border-radius: 50%;
             z-index: 30;
+
+            @media (max-width: 414px) {
+                width: 10px;
+                height: 10px;
+            }
+
+            @media (min-width: 415px), (max-width: 767px) {
+                width: 20px;
+                height: 20px;
+            }
+
+            @media (min-width: 768px) {
+                width: 25px;
+                height: 25px;
+            }
+
+            @media (min-width: 1140px) {
+                width: 30px;
+                height: 30px;
+            }
         }
 
         .spot {
             top: -10px;
             left: 417px;
+
+            @media (max-width: 414px) {
+                top: -3px;
+                left: 137px;
+            }
+
+            @media (min-width: 415px), (max-width: 767px) {
+                top: -5px;
+                left: 263px;
+            }
+
+            @media (min-width: 768px) {
+                top: -8px;
+                left: 367px;
+            }
+
+            @media (min-width: 1140px) {
+                top: -10px;
+                left: 417px;
+            }
         }
 
         .spot2 {
             top: 130px;
             left: 417px;
+
+            @media (max-width: 414px) {
+                top: 80px;
+                left: 137px;
+            }
+
+            @media (min-width: 415px), (max-width: 767px) {
+                top: 100px;
+                left: 263px;
+            }
+
+            @media (min-width: 768px) {
+                top: 100px;
+                left: 367px;
+            }
+
+            @media (min-width: 1140px) {
+                top: 130px;
+                left: 417px;
+            }
         }
 
         .dash {
@@ -250,6 +466,27 @@
             height: 255px;
             border: 1px dashed #333;
             z-index: 20;
+
+            @media (max-width: 414px) {
+                left: 80px;
+                height: 28px;
+            }
+
+            @media (min-width: 415px), (max-width: 767px) {
+                left: 270px;
+                height: 138px;
+
+            }
+
+            @media (min-width: 768px) {
+                left: 380px;
+                height: 220px;
+            }
+
+            @media (min-width: 1140px) {
+                left: 430px;
+                height: 255px;
+            }
         }
     }
 }

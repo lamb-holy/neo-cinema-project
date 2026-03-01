@@ -15,8 +15,20 @@
         padding: 20px 150px;
         gap: 40px;
 
-        @media (max-width: 768px) {
+        @media (max-width: 414px) {
             padding: 20px 50px;
+        }
+
+        @media (min-width: 415px), (max-width: 767px) {
+            padding: 20px 50px;
+        }
+
+        @media (min-width: 768px) {
+            padding: 20px 100px;
+        }
+
+        @media (min-width: 1140px) {
+            padding: 20px 150px;
         }
 
         span {
@@ -30,6 +42,26 @@
             flex-direction: row;
             gap: 20px;
             font-size: 14px;
+
+            @media (max-width: 414px) {
+                font-size: 8px;
+                gap: 14px;
+            }
+
+            @media (min-width: 415px), (max-width: 767px) {
+                font-size: 10px;
+                gap: 16px;
+            }
+
+            @media (min-width: 768px) {
+                font-size: 12px;
+                gap: 18px;
+            }
+
+            @media (min-width: 1140px) {
+                font-size: 14px;
+                gap: 20px;
+            }
         }
 
         .link {
